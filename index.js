@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const cors=require('cors')
+app.use(cors())
 require('dotenv').config()
 const port = process.env.SERVER_PORT || 5000
 const categoryrouter=require('./api/category/Router')
