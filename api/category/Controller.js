@@ -65,7 +65,7 @@ const getallcategory=async(req, res) => {
           const allcategories= await Category.find()
           res.json({
             message:"Category Added",
-            Category:allcategories
+            allcategories
 
           })
             
