@@ -112,7 +112,7 @@ const getallcategory=async(req, res) => {
       const remainingcategory= await Category.find()
         res.json({
           message:"Deleted SuccesFully",
-          Category:remainingcategory
+          remainingcategory
   
         })
     }
